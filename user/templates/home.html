@@ -1,0 +1,111 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block header %}
+{% endblock %}
+
+
+{% block content %} 
+
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Centralized Public Grievance Redress And Monitoring System</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Centralised Public Grievance Redress and Monitoring System (CPGRAMS) is an online platform available to the citizens
+             24x7 to lodge their grievances to the public authorities on any subject related to service delivery.</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="{% url 'user:about' %}" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="{% static 'assets/img/complaint.png' %}" class="img-fluid animated" height="900px" width="700px" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+
+    <section id="clients" class="clients clients">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/gandhi-150.jpg' %}" class="img-fluid" height="200px" width="200px" alt="" data-aos="zoom-in">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/digital-india-logo.jpg' %}" class="img-fluid" height="200px" width="200px" alt="" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/web-directory.jpg' %}" class="img-fluid" height="200px" width="200px" alt="" alt="" data-aos="zoom-in" data-aos-delay="200">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/india-gov-logo.jpg' %}" class="img-fluid" height="200px" width="200px" alt="" alt="" data-aos="zoom-in" data-aos-delay="300">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/digi-awards.jpg' %}" class="img-fluid" height="200px" width="200px" alt="" alt="" data-aos="zoom-in" data-aos-delay="400">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="{% static 'assets/img/niclogo.jpg' %}" class="img-fluid" height="200px" width="200px" alt="" alt="" data-aos="zoom-in" data-aos-delay="500">
+          </div>
+ 
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+    
+          <div class="section-title" data-aos="fade-up">
+            <h2>About CPGRAMS</h2>
+          </div>
+    
+          <div class="row content">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+              <p>
+                Centralised Public Grievance Redress and Monitoring System (CPGRAMS) is an online platform available to the citizens 24x7 to lodge their grievances 
+                to the public authorities on any subject related to service delivery. It is a single portal connected to all the Ministries/Departments of Government 
+                of India and States. Every Ministry and States have role-based access to this system. CPGRAMS is also accessible to the citizens through standalone mobile
+                 application downloadable through Google Play store and mobile application integrated with UMANG.
+              </p>
+              <p>
+                The status of the grievance filed in CPGRAMS can be tracked with the unique registration ID provided at the time of registration of the complainant.
+                 CPGRAMS also provides appeal facility to the citizens if they are not satisfied with the resolution by the Grievance Officer. After closure of grievance 
+                 if the complainant is not satisfied with the resolution, he/she can provide feedback. If the rating is ‘Poor’ the option to file an appeal is enabled.
+                  The status of the Appeal can also be tracked by the petitioner with the grievance registration number.
+              </p>
+               
+            </div>
+
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <p>
+               <b> Note : </b>If you have not got a satifactory redress of your grievance within a reasonable period of time,relating to Ministries/Departments and Organisations under the purview
+                 of Directorate of Public Grievances(DPG), Cabinet Secretariat, GOI, you may seek help of DPG in resolution. Please click here for details.
+              </p>
+              <a href="{% url 'user:contact' %}" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+    
+    
+
+
+
+{% endblock %}    
+
+
